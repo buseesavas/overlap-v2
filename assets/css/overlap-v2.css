@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #1d201f;
+}
+
+.overlap {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: absolute;
+  color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+h1 {
+  font-family: "Lexend";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+  display: none;
+}
+
+button:hover h1 {
+  display: block;
+}
+
+.html {
+  background-color: #e76f51;
+  left: 0;
+  z-index: 0;
+}
+
+.css {
+  background-color: #018adf;
+  z-index: 1;
+}
+
+.js {
+  background-color: #e9c46a;
+  right: 0;
+  z-index: 2;
+}
+.html:hover,
+.css:hover,
+.js:hover {
+  z-index: 3;
+}
